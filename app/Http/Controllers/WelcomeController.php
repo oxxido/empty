@@ -35,5 +35,16 @@ class WelcomeController extends Controller {
 		$data['laravelEnabled'] = "Laravel Ok";
 		return view('home-ng', $data);
 	}
-
+	/**
+	 * Second template demo
+	 *
+	 * @return Response
+	 */
+	public function creative()
+	{
+		//return view('welcome');
+		$data = [];
+		$data['laravelEnabled'] = "Laravel Ok";
+		return view('themes/creative/home', $data);
+	}
 }
