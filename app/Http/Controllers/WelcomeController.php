@@ -30,7 +30,10 @@ class WelcomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		//return view('welcome');
+		$data = [];
+		$data['laravelEnabled'] = "Laravel Ok";
+		return view('home-ng', $data);
 	}
 
 }
